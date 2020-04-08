@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="399.401094">
+    <testcase classname="Opencart Homepage" name="validating Registration" time="80.638082">
+        <system-out>
+            <![CDATA[Given I launch Chrome Browser...............................................passed
+When clicks on Myaccount....................................................passed
+Then clicks on Register.....................................................passed
+Then enters First Name in details...........................................passed
+Then enters Last Name in details............................................passed
+Then enters Email in details................................................passed
+Then enters Telephone in details............................................passed
+Then enters Password in details.............................................passed
+Then enters confirm Password in details.....................................passed
+Then clicks on privacy policy in details....................................passed
+Then clicks on submit in details............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Opencart Homepage" name="validating login" time="33.477152">
+        <system-out>
+            <![CDATA[Given I launch Chrome Browser...............................................passed
+Then clicks on Myaccount in homepage........................................passed
+Then clicks on login........................................................passed
+When enter "sreedhardhusa@gmail.com" and "Justin3670" in the field..........passed
+Then click submit button....................................................passed
+Then takes a screenshot.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Opencart Homepage" name="validating login 2" time="11.021907">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='top-links']/ul/li[2]/a&quot;}&#10;  (Session info: chrome=80.0.3987.163)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'&#10;System info: host: 'DESKTOP-D3NLLGS', ip: '192.168.43.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\durga\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 32350feafbf3b910211ec439ee9339a8&#10;*** Element info: {Using=xpath, value=//*[@id='top-links']/ul/li[2]/a}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at com.pages.Opencartlogin.opencart_account(Opencartlogin.java:25)&#13;&#10;&#9;at com.stepdefinition2.Stepdefinitionlogin.Myaccount1(Stepdefinitionlogin.java:30)&#13;&#10;&#9;at ✽.Then clicks on Myaccount in homepage(src/test/resources/Openfeatures/opentestcase.feature:22)&#13;&#10;">
+            <![CDATA[Given I launch Chrome Browser...............................................passed
+Then clicks on Myaccount in homepage........................................failed
+Then clicks on login........................................................skipped
+When enter "sreedhardhusa1@gmail.com" and "Justin1234" in the field.........skipped
+Then click submit button....................................................skipped
+Then takes a screenshot.....................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='top-links']/ul/li[2]/a"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-D3NLLGS', ip: '192.168.43.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\durga\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 32350feafbf3b910211ec439ee9339a8
+*** Element info: {Using=xpath, value=//*[@id='top-links']/ul/li[2]/a}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pages.Opencartlogin.opencart_account(Opencartlogin.java:25)
+	at com.stepdefinition2.Stepdefinitionlogin.Myaccount1(Stepdefinitionlogin.java:30)
+	at ✽.Then clicks on Myaccount in homepage(src/test/resources/Openfeatures/opentestcase.feature:22)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Opencart Homepage" name="validating login 3" time="41.819368">
+        <system-out>
+            <![CDATA[Given I launch Chrome Browser...............................................passed
+Then clicks on Myaccount in homepage........................................passed
+Then clicks on login........................................................passed
+When enter "sreedhardhusa3@gmail.com" and "Justin5678" in the field.........passed
+Then click submit button....................................................passed
+Then takes a screenshot.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Opencart Homepage" name="validating Laptops&amp;Notebooks" time="124.436272">
+        <system-out>
+            <![CDATA[Given I launch Chrome Browser...............................................passed
+Then clicks on laptops&Notebooks............................................passed
+Then clicks on Addtocart....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Opencart Homepage" name="validating Contactus" time="108.008313">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='content']/div/div/a&quot;}&#10;  (Session info: chrome=80.0.3987.163)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'&#10;System info: host: 'DESKTOP-D3NLLGS', ip: '192.168.43.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\durga\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 5dff4b8b960f446539d50480fa3233d4&#10;*** Element info: {Using=xpath, value=//*[@id='content']/div/div/a}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at com.pages.Opencartcontactus.opencart_continuebtn(Opencartcontactus.java:56)&#13;&#10;&#9;at com.stepdefinition2.StepdefinitionContactus.clicksoncontinue(StepdefinitionContactus.java:61)&#13;&#10;&#9;at ✽.Then clicks on continue(src/test/resources/Openfeatures/opentestcase.feature:50)&#13;&#10;">
+            <![CDATA[Given I launch Chrome Browser...............................................passed
+Then clicks on contact us...................................................passed
+Then enters name on Your name field.........................................passed
+Then enters email address...................................................passed
+Then enters info related to enquiry.........................................passed
+Then clicks on submit.......................................................passed
+Then clicks on continue.....................................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='content']/div/div/a"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-D3NLLGS', ip: '192.168.43.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\durga\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5dff4b8b960f446539d50480fa3233d4
+*** Element info: {Using=xpath, value=//*[@id='content']/div/div/a}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pages.Opencartcontactus.opencart_continuebtn(Opencartcontactus.java:56)
+	at com.stepdefinition2.StepdefinitionContactus.clicksoncontinue(StepdefinitionContactus.java:61)
+	at ✽.Then clicks on continue(src/test/resources/Openfeatures/opentestcase.feature:50)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

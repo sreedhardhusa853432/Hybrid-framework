@@ -20,15 +20,15 @@ public class OrangeHrmLogin {
 	}
 
 	//Enter username
-	public void orangehrm_username(String user) {
-		driver.findElement(username).sendKeys(user);
+	public void orangehrm_username(String userid) {
+		driver.findElement(username).sendKeys(userid);
 		LOG.info("Entered Name in the UserName field ");
 	}
 	
 	//Entering the password
 	public void orangehrm_password(String pass) {
 		driver.findElement(password).sendKeys(pass);
-		LOG.info("Enterd password in tbe Password field");
+		LOG.info("Entered password in tbe Password field");
 	}
 	
 	//click the login button

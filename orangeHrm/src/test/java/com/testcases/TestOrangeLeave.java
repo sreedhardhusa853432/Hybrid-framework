@@ -1,5 +1,6 @@
 package com.testcases;
 
+
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -7,13 +8,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.baseclass.Wrapperclass;
+import com.baseclass.Library;
 import com.pages.OrangeHrmLeave;
 import com.pages.OrangeHrmLogin;
 import com.seleniumutility.utility;
 
 
-public class TestOrangeLeave extends Wrapperclass{
+public class TestOrangeLeave extends Library{
 	OrangeHrmLogin loginpage;
 	
 	@BeforeClass

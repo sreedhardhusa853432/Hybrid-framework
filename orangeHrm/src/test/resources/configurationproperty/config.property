@@ -1,2 +1,2 @@
-browser=chrome;
-url="https://opensource-demo.orangehrmlive.com";
+browser=chrome
+url=https://opensource-demo.orangehrmlive.com/index.php/maintenance/purgeEmployee

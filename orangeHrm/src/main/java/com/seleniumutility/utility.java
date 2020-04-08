@@ -17,14 +17,20 @@ package com.seleniumutility;
 				this.driver =driver;
 		}
 		 	public void Takessnapshot(String path1) throws IOException{
-		 	     TakesScreenshot ts = (TakesScreenshot)driver;
-		            File Source = ts.getScreenshotAs(OutputType.FILE);
-		       
-						FileUtils.copyFile(Source, new File(System.getProperty("user.dir")+"/Users/durga/eclipse-workspace/HybridFramework/src/test/resources/Screenshot.png"));
-					
-		
+		 		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 		try {
+		 		 // now copy the  screenshot to desired location using copyFile //method
+		 		FileUtils.copyFile(src, new File("C:\\Users\\durga\\git\\hybrid-framework\\orangeHrm\\src\\test\\resources\\Screenshots.png"));
+		 		}
+		 		 
+		 		catch (IOException e)
+		 		 {
+		 		  System.out.println(e.getMessage());
+		 		 
+		 		 }
+		 		 }
 		 	}
 		
-	}
+
 
 

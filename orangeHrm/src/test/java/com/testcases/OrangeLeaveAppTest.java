@@ -1,24 +1,17 @@
 package com.testcases;
-	import java.io.IOException;
 
-	import org.testng.annotations.AfterClass;
-	import org.testng.annotations.BeforeClass;
-	import org.testng.annotations.Test;
+import java.io.IOException;
 
-	import com.baseclass.Wrapperclass;
-	import com.pages.OrangeHrmLeave;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.baseclass.Library;
 import com.pages.OrangeHrmLogin;
 import com.pages.OrangeLeaveApp;
 import com.seleniumutility.utility;
 
-	import org.testng.annotations.AfterClass;
-		import org.testng.annotations.BeforeClass;
-		import org.testng.annotations.Test;
-
-
-
-
-public class OrangeLeaveAppTest extends Wrapperclass {
+public class OrangeLeaveAppTest extends Library {
 			
 			@BeforeClass
 			public void start() throws IOException {

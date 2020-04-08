@@ -1,14 +1,15 @@
 
 	package com.testcases;
 
+
+
 	import java.io.IOException;
 
-	import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterClass;
 	import org.testng.annotations.BeforeClass;
 	import org.testng.annotations.Test;
 
-
-import com.baseclass.Wrapperclass;
+import com.baseclass.Library;
 import com.pages.OrangeHrmLogin;
 
 import com.pages.orangehrm_performance;
@@ -17,7 +18,7 @@ import com.seleniumutility.utility;
 
 
 
-	public class OrangehrmperfTestcase  extends Wrapperclass{
+	public class OrangehrmperfTestcase  extends Library{
 		
 		@BeforeClass
 		public void starting() throws IOException {
